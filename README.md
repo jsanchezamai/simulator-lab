@@ -14,7 +14,7 @@ What is a simulation
 ==============
 Just HTML5 for interactive simulating things and stories. See online:
 
-[Neuron simulation](./neuron/build/adapted-from-phet/neuron_en_adapted-from-phet.html)
+[Neuron simulation](./neuron-sample/build/spa/neuron.html)
 
 Download a demo
 ==========
