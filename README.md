@@ -2,6 +2,19 @@ Landpage
 ============
 https://jsanchezamai.github.io/simulator-lab/
 
+What is this for?
+================
+This is a PoC on PhET. I just download the code and set a few sh scripts to run simulations.
+
+It has been uploaded to gh-pages on github.
+
+At this point, you can just see "Download a demo" section to get running sims.
+
+What is a simulation
+==============
+Just HTML5 for interactive simulating things and stories. See online:
+
+[Neuron simulation](./neuron/build/adapted-from-phet/neuron_en_adapted-from-phet.html)
 
 Download a demo
 ==========
@@ -13,13 +26,20 @@ Run [download-sample.sh](./downlad-sample.sh) with proper repo name.
 ```console
 sh download-sample.sh graphing-lines
 ```
+
+It will run build scripts after downloading. Then it will run the run script. 
+
+If there are dependencies, re-run build script after downloading (with download-smaple.sh) them.
+
+At the end, you can always run builded simulations by:
+
 Then [run-created](./run-created-simulation.sh).
 
 ```console
-sh run-created-simulation.sh graphing-lines
+sh run-created-simulation.sh neuron
 ```
 
-To create a new
+To create a new blank
 ============
 Use [add_new_simulation.sh](./add_new_simulation.sh), then [build_simulation.sh](./build_simulation.sh).
 
