@@ -45,6 +45,22 @@
 https://jsanchezamai.github.io/simulator-lab/
 
 
+Download a demo
+==========
+See a list of demos on: [phet sims](./phetsims.html)
+
+Run [download-sample.sh](./downlad-sample.sh) with proper repo name.
+
+For example:
+
+```console
+sh download-sample.sh graphing-lines
+```
+
+To create a new
+============
+Use [add_new_simulation.sh](./add_new_simulation.sh), then [build_simulation.sh](./build_simulation.sh), then [](./run-created-simulation.sh).
+
 PhET Interactive Simulator PoC
 ====================
 
