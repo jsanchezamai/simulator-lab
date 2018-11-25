@@ -1,1 +1,6 @@
-theme: jekyll-theme-tactile
+title: simulator-lab
+logo: /assets/img/logo.png
+description: A bunch of simulations to try on PoCs distinct kinds of simulation editors.
+show_downloads: true
+google_analytics: false
+theme: jekyll-theme-minimal
