@@ -41,104 +41,104 @@
       <section>
 
       Landpage
-============
-https://jsanchezamai.github.io/simulator-lab/
+	============
+	https://jsanchezamai.github.io/simulator-lab/
 
 
-Download a demo
-==========
-See a list of demos on: [phet sims](./phetsims.html)
+	Download a demo
+	==========
+	See a list of demos on: [phet sims](./phetsims.html)
 
-Run [download-sample.sh](./downlad-sample.sh) with proper repo name.
+	Run [download-sample.sh](./downlad-sample.sh) with proper repo name.
 
-For example:
+	For example:
 
-```console
-sh download-sample.sh graphing-lines
-```
+	```console
+	sh download-sample.sh graphing-lines
+	```
 
-To create a new
-============
-Use [add_new_simulation.sh](./add_new_simulation.sh), then [build_simulation.sh](./build_simulation.sh), then [](./run-created-simulation.sh).
+	To create a new
+	============
+	Use [add_new_simulation.sh](./add_new_simulation.sh), then [build_simulation.sh](./build_simulation.sh), then [](./run-created-simulation.sh).
 
-PhET Interactive Simulator PoC
-====================
+	PhET Interactive Simulator PoC
+	====================
 
-Get general idea on [Creating PhET Interactive Simulations Activities approach guided inquiry](https://phet.colorado.edu/files/guides/PhetGuideActivityDoc_v8-final_en.pdf).
+	Get general idea on [Creating PhET Interactive Simulations Activities approach guided inquiry](https://phet.colorado.edu/files/guides/PhetGuideActivityDoc_v8-final_en.pdf).
 
-See [PhET Development Overview](https://docs.google.com/document/d/1Ys1EiwnqQGYuzGOcQSr4uXDes35mF1v1XhMZIl10nk8/edit#bookmark=id.ktug2sc8jabe).
+	See [PhET Development Overview](https://docs.google.com/document/d/1Ys1EiwnqQGYuzGOcQSr4uXDes35mF1v1XhMZIl10nk8/edit#bookmark=id.ktug2sc8jabe).
 
-See [PhET Source code](https://github.com/phetsims).
-	
-What is PhET HTML5 bundle
-==============
-Source code and Dependencies
+	See [PhET Source code](https://github.com/phetsims).
 
-Our simulations and dependencies are hosted publicly on GitHub
-https://github.com/phetsims
+	What is PhET HTML5 bundle
+	==============
+	Source code and Dependencies
 
-We have 40+ repositories for the simulations and their dependencies, all of which can be found here: https://github.com/phetsims?tab=repositories.
+	Our simulations and dependencies are hosted publicly on GitHub
+	https://github.com/phetsims
 
-Below is a list of some of the repositories that contain libraries and frameworks upon which the individual simulations depend.
+	We have 40+ repositories for the simulations and their dependencies, all of which can be found here: https://github.com/phetsims?tab=repositories.
 
-- Scenery: A general scene graph for rendering the graphics and handling the input.  Documentation site for scenery
-- Axon: for model implementation
-- Assert: assertion framework for development testing
-- phet-core: inheritance, extension and other utility functions
-- phetcommon: higher-level common dependencies
-- scenery-phet: PhET-specific scenery graphics and input handlers
-- Joist: Framework for application loading, launching, and handling tabs
-- Dot: Mathematics framework for model & view
-- Kite: Shape library
-- Sun: Graphical user interface components, such as buttons, checkboxes, etc
-- Sherpa: All of our 3rd party dependencies
-- Chipper: Tools for developing and building simulations.
-- Perennial: Maintenance tools that won't change with different versions of chipper checked out
+	Below is a list of some of the repositories that contain libraries and frameworks upon which the individual simulations depend.
 
-Main lines
-=============
-Creating a New Sim
-After checking out the dependencies and installing grunt-cli in the preceding instructions, you can create your own simulation using the template.
-1. Check out the template sim, called ‘simula-rasa’ using this git clone command:
+	- Scenery: A general scene graph for rendering the graphics and handling the input.  Documentation site for scenery
+	- Axon: for model implementation
+	- Assert: assertion framework for development testing
+	- phet-core: inheritance, extension and other utility functions
+	- phetcommon: higher-level common dependencies
+	- scenery-phet: PhET-specific scenery graphics and input handlers
+	- Joist: Framework for application loading, launching, and handling tabs
+	- Dot: Mathematics framework for model & view
+	- Kite: Shape library
+	- Sun: Graphical user interface components, such as buttons, checkboxes, etc
+	- Sherpa: All of our 3rd party dependencies
+	- Chipper: Tools for developing and building simulations.
+	- Perennial: Maintenance tools that won't change with different versions of chipper checked out
 
-cd phetsims
-git clone https://github.com/phetsims/simula-rasa.git
+	Main lines
+	=============
+	Creating a New Sim
+	After checking out the dependencies and installing grunt-cli in the preceding instructions, you can create your own simulation using the template.
+	1. Check out the template sim, called ‘simula-rasa’ using this git clone command:
 
-2. Install the perennial dependencies:
+	cd phetsims
+	git clone https://github.com/phetsims/simula-rasa.git
 
-cd perennial
-npm install
+	2. Install the perennial dependencies:
 
-3. Use the perennial ‘grunt’ task to create a new sim, like so (still in the perennial directory):
+	cd perennial
+	npm install
 
-grunt create-sim --repo=NAME --author=AUTHOR
+	3. Use the perennial ‘grunt’ task to create a new sim, like so (still in the perennial directory):
 
-For instance, if the simulation is going to be named Acceleration Lab and the author is Sam Reid from PhET Interactive Simulations, then you could put
+	grunt create-sim --repo=NAME --author=AUTHOR
 
-grunt create-sim --repo=acceleration-lab --author="Sam Reid (PhET Interactive Simulations)"
+	For instance, if the simulation is going to be named Acceleration Lab and the author is Sam Reid from PhET Interactive Simulations, then you could put
 
-4. Test the created simulation in the browser and make sure it launches.  It should be a blank simulation.  Write to the Developing Interactive Simulations in HTML5 Google Group if you run into problems.
-).
+	grunt create-sim --repo=acceleration-lab --author="Sam Reid (PhET Interactive Simulations)"
 
-For your information
-==================
-Once the environment is set, you can download plenty examples from:
+	4. Test the created simulation in the browser and make sure it launches.  It should be a blank simulation.  Write to the Developing Interactive Simulations in HTML5 Google Group if you run into problems.
+	).
 
-Checking out the HTML5 code from GitHub
+	For your information
+	==================
+	Once the environment is set, you can download plenty examples from:
 
-Our example-sim repository README.md includes a list of git clone commands that will check out the example simulation and all of its dependencies.
-https://github.com/phetsims/example-sim
+	Checking out the HTML5 code from GitHub
 
-And to clone some of our in-development sims:
-git clone git://github.com/phetsims/forces-and-motion-basics.git
-git clone git://github.com/phetsims/build-an-atom.git
+	Our example-sim repository README.md includes a list of git clone commands that will check out the example simulation and all of its dependencies.
+	https://github.com/phetsims/example-sim
 
-All repositories should be cloned into the same directory so that relative paths will work.
+	And to clone some of our in-development sims:
+	git clone git://github.com/phetsims/forces-and-motion-basics.git
+	git clone git://github.com/phetsims/build-an-atom.git
 
-Here is a full list of all phetsims repos.  If the sim won’t launch due to a missing dependency, you may need to check out some more of these repos:
-https://github.com/phetsims?tab=repositories
+	All repositories should be cloned into the same directory so that relative paths will work.
 
-Also note that this will check out the ‘master’ branch of all of our dependencies, which may create breaking changes intermittently if you remain up-to-date with them.  If you run into any breaking changes, please notify us immediately.  Also, we recommend developing your code on a public repo such as GitHub to enable us to test and update your simulations as common dependencies are changed.
+	Here is a full list of all phetsims repos.  If the sim won’t launch due to a missing dependency, you may need to check out some more of these repos:
+	https://github.com/phetsims?tab=repositories
+
+	Also note that this will check out the ‘master’ branch of all of our dependencies, which may create breaking changes intermittently if you remain up-to-date with them.  If you run into any breaking changes, please notify us immediately.  Also, we recommend developing your code on a public repo such as GitHub to enable us to test and update your simulations as common dependencies are changed.
 
 
       </section>
