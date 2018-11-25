@@ -3,5 +3,6 @@ echo "Entering on phetsims dir"
 cd phetsims
 echo "Downloading"
 git clone git://github.com/phetsims/${1}.git
+cd ..
 echo "Running installer"
-sh ../build_simulation.sh ${1}
+sh ./build_simulation.sh ${1}
