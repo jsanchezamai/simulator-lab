@@ -14,7 +14,8 @@ What is a simulation
 ==============
 Just HTML5 for interactive simulating things and stories. See online:
 
-[Neuron simulation](./neuron-sample/spa/neuron.html)
+[Neuron simulation](./neuron-sample/spa/neuron.html)  
+[Ph-scale](https://jsanchezamai.github.io/simulator-lab/ph-scale-sample/index.html)
 
 Download a demo
 ==========
